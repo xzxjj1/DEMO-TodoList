@@ -84,7 +84,11 @@ export default {
       this.isReg=true;
     },
     addUser(){
-      if (this.password===this.repeat){
+      if (this.name==''||this.password==''||this.repeat==''){
+        alert("请填写完整信息")
+      }else if(this.name.indexOf(" ")!=-1){
+        alert('用户名不可含有空格')
+      }else if (this.password===this.repeat){
         localStorage.setItem("name",this.name);
         localStorage.setItem("password",this.password);
         this.name='';
