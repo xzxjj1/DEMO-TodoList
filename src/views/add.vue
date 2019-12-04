@@ -1,17 +1,10 @@
 <!-- add -->
 
 <template>
-<div>
+<div style="margin-top:100px">
   <router-view />
 
 <el-form ref="form" :model="form" label-width="80px" style="margin:0 auto;width:500px">
-  <el-form-item label="事项标题">
-    <el-input v-model="title"></el-input>
-  </el-form-item>
-<el-form-item label="事项内容">
-    <el-input v-model="content"></el-input>
-  </el-form-item>
-
   <el-form-item label="截止时间">
     <el-col :span="15">
       
@@ -20,6 +13,12 @@
         
     </el-col>
     
+  </el-form-item>
+  <el-form-item label="事项标题">
+    <el-input v-model="title"></el-input>
+  </el-form-item>
+<el-form-item label="事项内容">
+    <el-input v-model="content"></el-input>
   </el-form-item>
   <el-form-item>
     <el-button type="primary" @click="add()">立即创建</el-button>

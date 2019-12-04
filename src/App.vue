@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">登陆</router-link> |
-      <router-link to="/add">添加</router-link>
-      
-    </div>
+    
     <router-view />
   </div>
 </template>

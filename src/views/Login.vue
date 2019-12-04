@@ -1,6 +1,6 @@
 <!-- login -->
 <template>
-<div class="login-container">
+<div class="login-container" style="margin-top:150px">
   <el-form :model="ruleForm2" :rules="rules2"
          status-icon
          ref="ruleForm2" 

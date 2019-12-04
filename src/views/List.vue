@@ -1,6 +1,11 @@
 <!-- list -->
 <template>
 <div>
+  <div id="nav">
+      <router-link to="/">登陆</router-link> |
+      <router-link to="/add">添加</router-link>
+      
+    </div>
   <el-table
       :data="pageLists"
       style="width: 80%; margin:0 auto; text-align:center">

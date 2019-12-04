@@ -33,11 +33,6 @@ const routes = [
         name: 'list',
         component: () => import('@/views/List.vue')
       },
-      {
-        path: 'user',
-        name: 'user',
-        component: () => import('@/views/User.vue')
-      },
     ]
   },
   
