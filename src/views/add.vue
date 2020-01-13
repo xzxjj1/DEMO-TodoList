@@ -2,17 +2,12 @@
 
 <template>
 <div style="margin-top:100px">
-  <router-view />
 
 <el-form ref="form" :model="form" label-width="80px" style="margin:0 auto;width:500px">
   <el-form-item label="截止时间">
     <el-col :span="15">
-      
-        <el-date-picker type="datetime" placeholder="截止时间" v-model="datetime" value-format="yyyy-MM-dd HH:mm:ss" format="yyyy-MM-dd HH:mm:ss" style="width: 100%;"></el-date-picker>
-        
-        
+      <el-date-picker type="datetime" placeholder="截止时间" v-model="datetime" value-format="yyyy-MM-dd HH:mm:ss" format="yyyy-MM-dd HH:mm:ss" style="width: 100%;"></el-date-picker>
     </el-col>
-    
   </el-form-item>
   <el-form-item label="事项标题">
     <el-input v-model="title"></el-input>

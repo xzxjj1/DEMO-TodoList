@@ -32,9 +32,8 @@
         </el-form-item>
   </el-form>
   
-  <form action="" v-else>
 
-    <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm reg-page">
+    <el-form :model="ruleForm" action="" v-else status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm reg-page">
   <h3 class="title">新用户注册</h3>
   <el-form-item label="用户名">
     <el-input v-model="name"></el-input>
@@ -50,7 +49,7 @@
       <el-button @click="cancel()">取消</el-button>
   
 </el-form>
-  </form>
+
 </div>
 </template>
 
